@@ -8,6 +8,9 @@ export type FillTextLoadingProps = {
 const easeInOutCubic = (t: number) =>
   t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
+/**
+ * This is a FillTextLoading animation that displays a text label with a darker overlay copy that fills in from left to right and back out, clipped to a width driven by an eased progress value from requestAnimationFrame. It accepts a label to display and cycleMs to control the fill/unfill duration, producing a loading-style text fill effect.
+ */
 export const FillTextLoading = ({
   label = "Loading",
   cycleMs = 2200,

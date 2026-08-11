@@ -12,6 +12,9 @@ export interface AspectRatioProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a simple AspectRatio component that constrains its children to a fixed width-to-height ratio using padding-based CSS. It accepts a numeric ratio and renders the content absolutely positioned and centered within the resulting container.
+ */
 const AspectRatio = ({ ratio, children }: AspectRatioProps) => {
   return (
     <div

@@ -10,6 +10,9 @@ type SpringConfig = {
   stiffness: number;
 };
 
+/**
+ * This is a SpringOscillator component that simulates a damped spring physics system, integrating force from stiffness and damping each frame, to drive a circular knob left, right, and back to center along a track, cycling through a sequence of target positions with different spring parameters as each settles. It accepts spanPx to control how far the knob travels from center.
+ */
 export const SpringOscillator = ({ spanPx = 56 }: SpringOscillatorProps) => {
   const [x, setX] = useState(0);
 

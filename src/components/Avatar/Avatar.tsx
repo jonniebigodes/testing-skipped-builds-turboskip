@@ -32,6 +32,9 @@ export interface AvatarProps {
   rootProps?: Omit<ComponentPropsWithoutRef<"div">, "id">;
 }
 
+/**
+ * This is a simple Avatar component that displays a user image with a text fallback (e.g., initials) shown while the image is loading or fails to load. It tracks load status internally, reports changes via onStatusChange, and accepts custom element ids and root props.
+ */
 export const Avatar = ({
   src,
   alt,

@@ -8,6 +8,9 @@ export type KeyframeInterruptHoverProps = {
   interruptCycleMs?: number;
 };
 
+/**
+ * This is a KeyframeInterruptHover component that contrasts two animation techniques side by side: a card that replays a CSS @keyframes "lift" pulse from the start each time it remounts (via a changing key) every keyframeCycleMs, and a progress bar whose target width is randomly retargeted every interruptCycleMs and transitions smoothly via CSS transitions, showing how transition-based animation can be interrupted mid-flight while keyframe animation restarts cleanly.
+ */
 export const KeyframeInterruptHover = ({
   keyframeCycleMs = 1600,
   interruptCycleMs = 550,

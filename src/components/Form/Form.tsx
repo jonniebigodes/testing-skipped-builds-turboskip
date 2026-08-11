@@ -19,6 +19,9 @@ export interface FormProps
   children: ReactNode;
 }
 
+/**
+ * This is a Form component that wraps a native form element in a styled, vertically-stacked container. It accepts an inverted flag for dark styling, an optional gap between fields, and children for the form fields, forwarding any remaining native form props.
+ */
 const Form = ({
   inverted = false,
   gap,

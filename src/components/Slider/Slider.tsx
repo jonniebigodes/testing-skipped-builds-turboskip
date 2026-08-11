@@ -21,6 +21,9 @@ export interface SliderProps {
 const clamp = (value: number, min: number, max: number) =>
   Math.min(max, Math.max(min, value));
 
+/**
+ * This is a Slider component that lets users pick a numeric value by dragging a thumb along a track or using arrow/Home/End keys. It accepts a value array, min/max/step bounds, orientation (horizontal or vertical), and a disabled flag, calling onValueChange with the snapped value, and exposes ARIA slider attributes for accessibility.
+ */
 const Slider = ({
   value,
   onValueChange,

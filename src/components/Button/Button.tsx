@@ -45,6 +45,9 @@ const getSizeStyles = (size: "small" | "medium" | "large", t: Theme) => {
   return sizeMap[size];
 };
 
+/**
+ * This is a simple Button component that renders a styled, clickable button. It accepts a required label, an optional background color, a size variant ('small', 'medium', or 'large') that controls padding, height and font size, and an onClick handler.
+ */
 const Button = ({
   backgroundColor,
   size = "medium",

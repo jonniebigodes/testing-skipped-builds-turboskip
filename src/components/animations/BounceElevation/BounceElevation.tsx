@@ -23,6 +23,9 @@ const easeBounceOut = (t: number) => {
   return n1 * u * u + 0.984375;
 };
 
+/**
+ * This is a BounceElevation animation that lifts a rounded square upward with a cubic ease-out and drops it back down with a bounce-out easing, looping continuously via requestAnimationFrame. It accepts liftPx to control the travel height and cycleMs for the cycle duration, and renders a shadow beneath the shape that scales and fades in sync to reinforce the sense of elevation.
+ */
 export const BounceElevation = ({
   liftPx = 36,
   cycleMs = 1400,

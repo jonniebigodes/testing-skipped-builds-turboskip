@@ -5,6 +5,9 @@ export type RotationLoopProps = {
   durationMs?: number;
 };
 
+/**
+ * This is a RotationLoop component that continuously spins a rounded square containing a small dot through a full 360-degree revolution using an infinite linear CSS keyframe animation. It accepts durationMs to control how long one full revolution takes.
+ */
 export const RotationLoop = ({ durationMs = 3200 }: RotationLoopProps) => {
   const spinAnimation = keyframes`
     0% {

@@ -10,6 +10,9 @@ export interface ToggleProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a Toggle component rendered as a pressed/unpressed switch button. It accepts a pressed state, disabled/required flags, and an optional name and label content, calling onPressedChange with the inverted value when clicked, and exposes aria-pressed for accessibility.
+ */
 const Toggle = ({
   onPressedChange,
   pressed,

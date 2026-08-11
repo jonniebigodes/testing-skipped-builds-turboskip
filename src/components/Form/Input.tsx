@@ -19,6 +19,9 @@ export interface InputProps
   type?: string;
 }
 
+/**
+ * This is an Input component that renders a styled native text input. It accepts an inverted flag for dark styling, a placeholder, and a type (defaulting to text), forwarding any remaining native input props such as value and onChange.
+ */
 const Input = ({
   inverted = false,
   placeholder = '',

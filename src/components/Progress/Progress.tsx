@@ -11,6 +11,9 @@ export interface ProgressProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a Progress component that displays a labeled progress bar based on a value between a min and max. It supports horizontal or vertical orientation, disabled and readonly states, and exposes ARIA progressbar attributes for accessibility while rendering the current percentage.
+ */
 export default function Progress({
   min = 0,
   max = 100,

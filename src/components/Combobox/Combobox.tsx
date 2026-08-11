@@ -16,6 +16,9 @@ export interface ComboboxProps {
   label?: string;
 }
 
+/**
+ * This is a Combobox component that combines a text input with a filterable dropdown list of options. It supports single or multiple selection, controlled or uncontrolled open/value state, keyboard navigation (arrow keys, Enter, Escape), a clear action, and closes automatically on outside click.
+ */
 const Combobox = ({
   type = 'single',
   value,

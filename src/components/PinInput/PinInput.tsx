@@ -36,6 +36,9 @@ const sanitize = (
   }
 };
 
+/**
+ * This is a PinInput component that renders a row of single-character input boxes for entering codes such as OTPs. It manages the value as either a controlled array of strings or internal state, supports numeric, alphanumeric, or alphabetic character sanitization, masking, and handles typing, backspace, arrow-key navigation, and pasting across the individual fields.
+ */
 export default function PinInput({
   value,
   onValueChange,

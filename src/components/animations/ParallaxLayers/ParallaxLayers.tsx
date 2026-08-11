@@ -7,6 +7,9 @@ export type ParallaxLayersProps = {
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
+/**
+ * This is a ParallaxLayers component that renders three overlapping shapes (back, mid, front) that translate along a chosen axis at different distances driven by a shared progress value oscillating between 0 and 1, simulating a parallax depth effect where the frontmost layer moves further than the layers behind it. It accepts axis to choose horizontal or vertical movement and durationMs to control the sweep speed.
+ */
 export const ParallaxLayers = ({
   axis = "horizontal",
   durationMs = 5000,

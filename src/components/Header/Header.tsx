@@ -15,6 +15,9 @@ export interface HeaderProps {
   onLinkClick?: (link: HeaderLink) => void;
 }
 
+/**
+ * This is a Header component that renders a page header with an optional logo, title, and a row of navigation links. It supports sticky positioning, a full-width layout, an inverted color scheme, and an onLinkClick callback fired when a navigation link is clicked.
+ */
 const Header = ({
   title = 'Application',
   links = [],
