@@ -9,7 +9,16 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_01bcf6348fee1d7",
+    "chromatic:skip": "chromatic --project-token=chpt_01bcf6348fee1d7 --skip --exit-zero-on-changes",
+    "chromatic:turbosnap": "chromatic --project-token=chpt_01bcf6348fee1d7 --only-changed --exit-zero-on-changes",
+    "chromatic:all": "chromatic --project-token=chpt_01bcf6348fee1d7",
+    "chromatic:externals": "chromatic --project-token=chpt_01bcf6348fee1d7 --only-changed --exit-zero-on-changes --externals \"public/**\"",
+    "chromatic:untraced": "chromatic --project-token=chpt_01bcf6348fee1d7 --only-changed --exit-zero-on-changes --untraced \"modes-config/**\"",
+    "chromatic:untraced-externals": "chromatic --project-token=chpt_01bcf6348fee1d7 --only-changed --exit-zero-on-changes --untraced \"modes-config/**\" --externals \"public/**\"",
+    "chromatic:onlystoryfiles": "chromatic --project-token=chpt_01bcf6348fee1d7 --only-changed --exit-zero-on-changes --only-story-files \"src/components/animations/**/*.stories.tsx\"",
+    "chromatic:onlystorynames": "chromatic --project-token=chpt_01bcf6348fee1d7 --only-changed --exit-zero-on-changes --only-story-names \"Animations/*\""
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
