@@ -12,6 +12,9 @@ export interface MeterProps {
   high?: number;
 }
 
+/**
+ * This is a Meter component that visualizes a numeric value within a min/max range as a colored progress bar with a percentage label. It derives the bar color from optional low/high/optimum thresholds (green for the desirable range, yellow for a caution range, pink for a poor range) and exposes ARIA meter attributes for accessibility.
+ */
 export default function Meter({
   min = 0,
   max = 100,

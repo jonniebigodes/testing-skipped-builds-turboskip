@@ -32,6 +32,9 @@ const StarIcon = ({ filled }: { filled: boolean }) => (
   </svg>
 );
 
+/**
+ * This is a RatingGroup component that renders a row (or column) of star icons for selecting a rating between a min and max value. It supports controlled or uncontrolled values, hover preview, keyboard selection, disabled/readOnly/required states, and orientation, exposing a radiogroup role with radio items for accessibility.
+ */
 const RatingGroup = ({
   onValueChange,
   disabled = false,

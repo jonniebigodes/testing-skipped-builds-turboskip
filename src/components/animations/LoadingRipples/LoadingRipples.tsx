@@ -6,6 +6,9 @@ export type LoadingRipplesProps = {
   color?: string;
 };
 
+/**
+ * This is a LoadingRipples component that renders concentric circular rings expanding and fading out via a shared CSS keyframe animation, with each ring's animation offset by a negative delay proportional to its index so the rings emanate continuously like a radar sweep. It accepts ringCount, cycleMs, and color to control the number of rings, animation speed, and ring color.
+ */
 export const LoadingRipples = ({
   ringCount = 3,
   cycleMs = 2400,

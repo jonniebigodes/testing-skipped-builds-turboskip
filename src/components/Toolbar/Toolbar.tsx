@@ -12,6 +12,9 @@ export interface ToolbarProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a Toolbar component that lays out its children in a row or column, controlled by the orientation prop. It renders with role="toolbar" and the matching aria-orientation attribute for accessibility.
+ */
 const Toolbar = ({ orientation = 'horizontal', children }: ToolbarProps) => {
   const t = useTheme();
   const isHorizontal = orientation === 'horizontal';

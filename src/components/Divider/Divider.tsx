@@ -12,6 +12,9 @@ export interface DividerProps {
   inverted?: boolean;
 }
 
+/**
+ * This is a simple Divider component that renders a horizontal rule to visually separate content. It accepts an optional custom color and an inverted mode that swaps the line and background colors for use on dark backgrounds.
+ */
 const Divider = ({ color: customColor, inverted = false }: DividerProps) => {
   const t = useTheme();
   const dividerColor = inverted

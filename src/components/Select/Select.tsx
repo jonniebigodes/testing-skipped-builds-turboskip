@@ -22,6 +22,9 @@ export interface SelectProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a Select component that implements a custom dropdown listbox supporting single or multiple selection from a list of items. It manages open/closed and selected-value state (controllable via props), closes on outside click, handles keyboard interaction on the trigger, and renders a visually hidden native `<select>` for form submission and accessibility.
+ */
 const Select = ({
   type = 'single',
   value,

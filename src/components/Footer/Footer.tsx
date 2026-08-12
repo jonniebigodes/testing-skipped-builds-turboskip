@@ -27,6 +27,9 @@ export interface FooterProps {
   onLinkClick?: (link: string) => void;
 }
 
+/**
+ * This is a Footer component that renders a page footer with an optional row of navigation links and a centered label/copyright text. It accepts a custom color, an inverted color scheme, and an onLinkClick callback fired when a link is clicked.
+ */
 const Footer = ({
   color: customColor,
   label = "© 2025 Company Name. All rights reserved.",

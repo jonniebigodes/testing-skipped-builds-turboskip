@@ -35,6 +35,9 @@ function parseTimeString(timeString: string): TimeValue {
   };
 }
 
+/**
+ * This is a TimeField component that renders a native time input with an optional label and a clear button. It accepts a value, min/max bounds, hour cycle and seconds options, disabled/readOnly/required flags, and calls onValueChange with both the raw string and a parsed hour/minute/second value on change or clear.
+ */
 export default function TimeField({
   value,
   onValueChange,

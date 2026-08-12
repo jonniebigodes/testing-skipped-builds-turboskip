@@ -13,6 +13,9 @@ export type ScrambleTextRevealProps = {
   scrambleTickMs?: number;
 };
 
+/**
+ * This is a ScrambleTextReveal component that cycles through a list of words, transitioning between the current and next word by progressively revealing correct characters left-to-right while the remaining unrevealed characters are randomized on every tick, alongside a blinking cursor. It accepts words to customize the list, wordHoldMs for how long each word is displayed, and scrambleTickMs for how fast the scramble effect updates.
+ */
 export const ScrambleTextReveal = ({
   words: wordsProp,
   wordHoldMs = 2200,

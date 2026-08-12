@@ -13,6 +13,9 @@ export interface CheckboxProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a Checkbox component that renders a visually hidden native checkbox paired with a styled custom indicator and optional label content. It supports controlled or uncontrolled checked state, disabled/required/readOnly flags, and calls onCheckedChange when the checked state changes.
+ */
 const Checkbox = ({
   checked,
   onCheckedChange,

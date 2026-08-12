@@ -6,6 +6,9 @@ export type LoadingPulseDotsProps = {
   color?: string;
 };
 
+/**
+ * This is a LoadingPulseDots component that renders a row of dots pulsing in scale and opacity via a shared CSS keyframe animation, with each dot's animation offset by a negative delay proportional to its index so the pulses ripple across the row. It accepts dotCount, cycleMs, and color to control the number of dots, animation speed, and dot color.
+ */
 export const LoadingPulseDots = ({
   dotCount = 5,
   cycleMs = 1400,

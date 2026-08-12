@@ -38,6 +38,9 @@ const interpolateColor = (
   return colors[0];
 };
 
+/**
+ * This is a ColorInterpolation animation that smoothly morphs a square's background color across a fixed palette by linearly interpolating RGB values based on a progress value that oscillates back and forth between 0 and 1. It accepts durationMs to control how long one direction of the sweep takes, producing a continuous back-and-forth color transition effect.
+ */
 export const ColorInterpolation = ({
   durationMs = 3200,
 }: ColorInterpolationProps) => {

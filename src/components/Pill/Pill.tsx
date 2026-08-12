@@ -90,6 +90,9 @@ const getVariantStyles = (
   return variantMap[variant];
 };
 
+/**
+ * This is a simple Pill (badge/tag) component that renders inline content with a variant color scheme (default, inverted, warning, or success) and a size (small, medium, or large). It supports an optional click handler and a disabled state, applying appropriate cursor and hover styles based on interactivity.
+ */
 const Pill = ({
   variant = 'default',
   size = 'medium',

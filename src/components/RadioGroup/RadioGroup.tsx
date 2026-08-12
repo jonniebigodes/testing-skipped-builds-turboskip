@@ -21,6 +21,9 @@ export interface RadioGroupProps {
   options: RadioOption[];
 }
 
+/**
+ * This is a RadioGroup component that renders a set of mutually exclusive radio options with custom styling. It accepts an array of options (each with a label, value, and optional disabled flag), supports controlled or uncontrolled selection, horizontal or vertical orientation, and disabled/readOnly/required states, exposing a radiogroup role for accessibility.
+ */
 const RadioGroup = ({
   onValueChange,
   disabled = false,

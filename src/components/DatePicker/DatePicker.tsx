@@ -91,6 +91,9 @@ const toComparable = (date: DateValue | undefined) =>
 const sameDay = (a: DateValue, b: DateValue) =>
   a.year === b.year && a.month === b.month && a.day === b.day;
 
+/**
+ * This is a DatePicker component that renders a text input paired with a popover calendar for selecting one or multiple dates. It supports controlled/uncontrolled open state, min/max bounds, disabled or unavailable dates, locale-aware formatting, and closes on outside click or Escape for accessibility.
+ */
 const DatePicker = ({
   type = 'single',
   value,

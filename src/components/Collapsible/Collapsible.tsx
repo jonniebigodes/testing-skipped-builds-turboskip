@@ -25,6 +25,9 @@ export interface CollapsibleProps {
   children?: ReactNode;
 }
 
+/**
+ * This is a simple Collapsible component that toggles the visibility of its children when its trigger button is clicked. It supports both controlled and uncontrolled open state via the open/onOpenChange props, a disabled state, and provides accessibility attributes such as aria-expanded and aria-controls.
+ */
 const Collapsible = ({
   open,
   onOpenChange,

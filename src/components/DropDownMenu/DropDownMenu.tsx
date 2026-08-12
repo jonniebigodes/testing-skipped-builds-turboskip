@@ -28,6 +28,9 @@ export interface DropDownMenuProps {
   onSelect?: (item: string) => void;
 }
 
+/**
+ * This is a DropDownMenu component that renders a labeled toggle button revealing a list of selectable string options. It manages its own open/closed state, closes when clicking outside or pressing Escape, invokes an onSelect callback when an option is chosen, and supports an inverted color scheme.
+ */
 const DropDownMenu = ({
   color: customColor,
   label,
